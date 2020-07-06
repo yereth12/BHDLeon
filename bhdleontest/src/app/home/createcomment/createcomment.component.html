@@ -1,0 +1,51 @@
+<form [formGroup]="commentForm" (ngSubmit)="submit()">
+  <ion-grid>
+    <ion-row>
+      <ion-label>
+        Nombre:
+      </ion-label>
+      <ion-input
+        [(ngModel)]="comment.nombre"
+        inputmode="nombre"
+        shape="round"
+        formControlName="nombre"
+      ></ion-input>
+    </ion-row>
+
+    <ion-row>
+      <ion-label>
+        email:
+      </ion-label>
+      <ion-input
+        [(ngModel)]="comment.email"
+        inputmode="email"
+        shape="round"
+        formControlName="email"
+      ></ion-input>
+    </ion-row>
+
+    <ion-row>
+      <ion-label>
+        website:
+      </ion-label>
+      <ion-input
+        [(ngModel)]="comment.website"
+        inputmode="website"
+        shape="round"
+        formControlName="website"
+      ></ion-input>
+    </ion-row>
+
+    <ion-row>
+      <ion-label>
+        comment:
+      </ion-label>
+      <ion-input
+        [(ngModel)]="comment.comment"
+        inputmode="comment"
+        shape="round"
+        formControlName="comment"
+      ></ion-input>
+    </ion-row>
+  </ion-grid>
+</form>
